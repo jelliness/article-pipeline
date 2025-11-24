@@ -1,0 +1,75 @@
+{
+  "articles": [
+    {
+      "id": "001",
+      "url": "https://rmn.ph/pag-alis-ng-online-gambling-sites-sa-iba-pang-platforms-inihirit-na-rin-ng-isang-senador/",
+      "source": "RMN",
+      "category": "politics",
+      "priority": "high"
+    },
+    {
+      "id": "002", 
+      "url": "https://philnews.ph/2025/08/18/4d-lotto-result-today-monday-august-18-2025",
+      "source": "PhilNews",
+      "category": "lottery",
+      "priority": "medium"
+    },
+    {
+      "id": "003",
+      "url": "https://www.spin.ph/volleyball/pvl/savi-davison-s-unwavering-belief-in-pldt-teammates-pay-off-a5172-20250817",
+      "source": "Spin.ph",
+      "category": "sports",
+      "priority": "low"
+    },
+    {
+      "id": "004",
+      "url": "https://time.com/7310051/science-obsessed-stadium-concerts/",
+      "source": "Time",
+      "category": "entertainment",
+      "priority": "medium"
+    },
+    {
+      "id": "005",
+      "url": "https://manilastandard.net/news/crime-courts/314631070/sulus-2nd-most-wanted-fugitive-dies-in-clash-with-troops.html",
+      "source": "Manila Standard",
+      "category": "crime",
+      "priority": "high"
+    },
+    {
+      "id": "006",
+      "url": "https://dailyguardian.com.ph/psa-6-warns-consumers-carry-weight-of-iloilo-citys-rpt-hike/",
+      "source": "Daily Guardian",
+      "category": "economy",
+      "priority": "medium"
+    },
+    {
+      "id": "007",
+      "url": "https://pilipinomirror.com/unang-pvl-crown-sa-pldt/",
+      "source": "Pilipino Mirror",
+      "category": "sports",
+      "priority": "low"
+    },
+    {
+      "id": "008",
+      "url": "https://mb.com.ph/2025/08/18/weak-demand-tech-glitches-slash-ssi-groups-profit-in-first-half",
+      "source": "Manila Bulletin",
+      "category": "business",
+      "priority": "high"
+    },
+    {
+      "id": "009",
+      "url": "https://watchmendailyjournal.com/2025/08/18/cone-opens-up-about-dealing-with-certain-constraints-in-gilas/",
+      "source": "Watchmen Daily",
+      "category": "sports",
+      "priority": "medium"
+    },
+    {
+      "id": "010",
+      "url": "https://www.philstar.com/pilipino-star-ngayon/probinsiya/2025/08/18/2466244/baha-rumagasa-sa-cebu-1-patay-daang-katao-lumikas",
+      "source": "Philippine Star",
+      "category": "news",
+      "priority": "high"
+    }
+  ]
+}
+
