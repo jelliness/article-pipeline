@@ -257,6 +257,11 @@ class ArticleModel:
             
             last_id = max_id if max_id > 0 else 0
             
+            # Clear seen hashes to allow re-importing (for dashboard imports)
+            # This prevents false duplicate detection for fresh imports
+            if hasattr(self.publisher, 'clear_seen_hashes'):
+                self.publisher.clear_seen_hashes()
+            
             # Publish to Redis queues via Publisher
             # The consumer will handle scraping and storing in MongoDB
             published_count = 0

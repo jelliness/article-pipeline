@@ -176,6 +176,14 @@ class ArticlePublisher:
             logger.error(f"Error publishing single article: {e}")
             return False
     
+    def clear_seen_hashes(self):
+        """
+        Clear the in-memory duplicate tracking set.
+        Useful when starting a fresh import or resetting the publisher.
+        """
+        self.seen_hashes.clear()
+        logger.info("Cleared seen_hashes for fresh import")
+    
     def get_queue_stats(self) -> Dict[str, int]:
         """
         Get current queue lengths.

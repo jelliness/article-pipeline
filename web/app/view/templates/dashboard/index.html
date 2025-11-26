@@ -190,7 +190,7 @@
 
             <!-- Right Side: Recent Articles Table -->
             <div class="table-card" style="height: 100%; display: flex; flex-direction: column;">
-                <h3>Recent Articles</h3>
+                <h3>Articles</h3>
                 
                 <!-- Filter Controls -->
                 <div style="display: flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; align-items: center;">
@@ -1008,6 +1008,12 @@
                         body: formData
                     });
                     
+                    if (!response.ok) {
+                        const errorText = await response.text();
+                        console.error('Server error:', response.status, errorText);
+                        throw new Error(`Server error: ${response.status} - ${errorText}`);
+                    }
+                    
                     const result = await response.json();
                     
                     if (result.success) {
@@ -1025,9 +1031,11 @@
                         // Reload page after 2 seconds
                         setTimeout(() => location.reload(), 2000);
                     } else {
+                        console.error('Import failed:', result);
                         showToast(result.error || 'Failed to import file', 'error');
                     }
                 } catch (error) {
+                    console.error('Upload error:', error);
                     showToast('Error uploading file: ' + error.message, 'error');
                 } finally {
                     // Reset button

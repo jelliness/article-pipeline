@@ -5,11 +5,13 @@ from flask import Flask
 import threading
 from typing import Optional
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 from .model.database import Database
 
-# Load environment variables
-load_dotenv()
+# Load environment variables from root .env file
+env_path = Path(__file__).parent.parent.parent / '.env'
+load_dotenv(dotenv_path=env_path)
 
 
 class FlaskApp:

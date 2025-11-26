@@ -2,10 +2,12 @@
 Configuration management for the article pipeline.
 """
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
+# Load environment variables from root .env file
+env_path = Path(__file__).parent.parent.parent / '.env'
+load_dotenv(dotenv_path=env_path)
 
 
 class ConfigurationError(Exception):
