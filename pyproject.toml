@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "article-pipeline"
+version = "1.0.0"
+description = "A robust publisher-consumer pipeline for web article scraping using Redis and MongoDB"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "redis>=4.0.0",
+    "pymongo>=4.0.0",
+    "cloudscraper>=1.2.0",
+    "beautifulsoup4>=4.9.0",
+    "requests>=2.25.0",
+    "python-dotenv>=0.19.0",
+]
+
+[tool.setuptools]
+packages = ["src"]
